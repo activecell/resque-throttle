@@ -12,12 +12,12 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "fhwang-resque-throttle"
-  gem.homepage = "http://github.com/fhwang/resque-throttle"
+  gem.name = "resque-throttle"
+  gem.homepage = "http://github.com/profitably/resque-throttle"
   gem.license = "MIT"
   gem.summary = %Q{resque-throttle is an extension to the resque queue system that restricts the frequency in which certain jobs are run.}
   gem.description = %Q{resque-throttle is an extension to the resque queue system that restricts the frequency in which certain jobs are run.}
-  gem.email = "francis.hwang@profitably.com"
+  gem.email = "engineering@profitably.com"
   gem.authors = ["Francis Hwang"]
 end
 Jeweler::RubygemsDotOrgTasks.new
@@ -36,7 +36,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "fhwang-resque-throttle #{version}"
+  rdoc.title = "resque-throttle #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
